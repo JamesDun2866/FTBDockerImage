@@ -26,11 +26,11 @@ RUN useradd -m -U minecraft && \
 	chown -R minecraft:minecraft /minecraft
 
 #remove the glitched eula.txt 
-RUN sed -i '2,6d' /minecraft/start.sh
+#RUN sed -i '2,6d' /minecraft/start.sh
 
 #install sponge
-RUN wget https://repo.spongepowered.org/maven/org/spongepowered/spongeforge/1.12.2-2838-7.3.1-RC4093/spongeforge-1.12.2-2838-7.3.1-RC4093.jar &&/
-cp spongeforge-1.12.2-2838-7.3.1-RC4093.jar /minecraft/mods
+#RUN wget https://repo.spongepowered.org/maven/org/spongepowered/spongeforge/1.12.2-2838-7.3.1-RC4093/spongeforge-1.12.2-2838-7.3.1-RC4093.jar &&/
+#mv spongeforge-1.12.2-2838-7.3.1-RC4093.jar /minecraft/mods
 
 #Install plugins (WIP)
 
